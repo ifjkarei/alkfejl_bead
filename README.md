@@ -1,2 +1,4 @@
-# alkfejl_bead
-Alkalmazások fejlesztése beadandó
+# Alkalmazások fejlesztése beadandó
+## Készítette:
+- Káré István (CG2T21)
+- Szabó Barnabás ()
