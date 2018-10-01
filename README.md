@@ -1,6 +1,6 @@
 # Alkalmazások fejlesztése beadandó
 ## Készítette:
 - Káré István (CG2T21)
-- Szabó Barnabás ()
+- Szabó Barnabás (O7HICZ)
 
 ### Feladat leírása:
