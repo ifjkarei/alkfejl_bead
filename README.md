@@ -6,7 +6,7 @@
 
 ### Feladat leírása:
 
-A program a Neptun tárgyfelvételi rendszerének egy leegyszerűsített változatát valósítja meg. A 
+A program a Neptun tárgyfelvételi rendszerének egy leegyszerűsített változatát valósítja meg.
 
 #### Feladat funkcionális követelményei:
  ##### Adatbázis
