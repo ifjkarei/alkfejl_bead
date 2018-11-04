@@ -1,15 +1,18 @@
 package hu.elte.inf.webprogramozas.alkfejlbead.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "subjects")
-
 public class Subject {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -29,12 +32,14 @@ public class Subject {
     @JsonIgnore
     private Lecturer lecturer;
 
-    @OneToMany(mappedBy = "subject")
+    @ManyToMany(mappedBy = "subjects")
+    @JsonIgnore
     private List<Student> students;
 
-    @ManyToMany
-    @JoinTable
-    private List<Room> rooms;
+    @ManyToOne
+    @JoinColumn
+    @JsonIgnore
+    private Room room;
 
 
 }
