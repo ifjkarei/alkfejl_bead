@@ -1,5 +1,6 @@
 package hu.elte.inf.webprogramozas.alkfejlbead.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,7 +26,7 @@ public class Student {
     @Column
     private String neptun;
 
-    @ManyToMany
-    @JoinTable
+    @ManyToMany(mappedBy = "students")
+    @JsonIgnore
     private List<Subject> subjects;
 }

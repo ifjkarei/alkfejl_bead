@@ -32,8 +32,8 @@ public class Subject {
     @JsonIgnore
     private Lecturer lecturer;
 
-    @ManyToMany(mappedBy = "subjects")
-    @JsonIgnore
+    @ManyToMany
+    @JoinTable
     private List<Student> students;
 
     @ManyToOne
