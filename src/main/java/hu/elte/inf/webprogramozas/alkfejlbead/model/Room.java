@@ -24,7 +24,6 @@ public class Room {
     private String roomName;
 
     @OneToMany(mappedBy = "room")
-    @JoinTable
     private List<Subject> subjects;
 
 

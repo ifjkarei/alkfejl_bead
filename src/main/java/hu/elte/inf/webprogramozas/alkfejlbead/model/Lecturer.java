@@ -26,6 +26,5 @@ public class Lecturer {
     private String neptun;
 
     @OneToMany(mappedBy = "lecturer")
-    @JoinTable
     private List<Subject> subjects;
 }
