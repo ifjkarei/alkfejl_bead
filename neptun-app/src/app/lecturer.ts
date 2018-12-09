@@ -1,8 +1,8 @@
 import {Subject} from "./subject"
 
-export class Student{
+export class Lecturer{
   id: number;
   name: string;
   birth: Date;
-  subjectID: number;
+  subjects: Subject[];
 }
