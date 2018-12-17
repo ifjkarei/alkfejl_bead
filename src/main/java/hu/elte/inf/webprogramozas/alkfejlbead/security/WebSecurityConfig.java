@@ -1,4 +1,4 @@
-package hu.elte.inf.webprogramozas.alkfejlbead;
+package hu.elte.inf.webprogramozas.alkfejlbead.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
