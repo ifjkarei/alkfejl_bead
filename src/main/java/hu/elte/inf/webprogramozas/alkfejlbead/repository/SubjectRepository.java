@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface SubjectRepository extends JpaRepository<Subject, Integer> {
     @Override
-    public List<Subject> findAll();
+    List<Subject> findAll();
 }
