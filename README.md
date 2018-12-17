@@ -51,3 +51,31 @@ A program a Neptun tárgyfelvételi rendszerének egy leegyszerűsített változ
  Tanár - Vehet fel új tantárgyat, és rendelhet diákokat a saját tárgyaihoz, de más tanárt vagy diákot nem adhat hozzá az adatbázishoz.
  Diák - Nem módosíthatja az adatbázisban szereplő adatokat. Lekérdezéseket kezdeményezhet.
  
+ ## Backend
+ 
+ ### Végpontok
+ #### Lecturer
+  GET: /api/lecturer - Összes oktató lekérdezése
+  GET: /api/lecturer/{neptun} - Oktató lekérdezése neptun kód alapján
+  POST: /api/lecturer - Oktató felvétele
+  DELETE: /api/lecturer/{neptun} - Oktató törlése neptun kód alapján
+  
+ #### Room
+  GET: /api/room - Összes terem lekérdezése
+  GET: /api/room/{id} - Terem lekérdezése id alapján
+  POST: /api/room - Terem felvétele
+  DELETE: /api/room/{id} - Terem törlése id alapján
+  
+ #### Subject
+  GET: /api/subject - Összes tárgy lekérdezése
+  GET: /api/subject/{id} - Tárgy lekérdezése id alapján
+  POST: /api/subject - Tárgy felvétele
+  DELETE: /api/subject/{id} - Tárgy törlése id alapján
+  
+ #### Student
+  GET: /api/student - Összes hallgató lekérdezése
+  GET: /api/student/{neptun} - Hallgató lekérdezése neptun kód alapján
+  POST: /api/student - Hallgató felvétele
+  DELETE: /api/student/{neptun} - Hallgató törlése neptun kód alapján
+
+  
