@@ -1,0 +1,12 @@
+<div>
+  <label>Tárgyak</label>
+  <ul>
+    <li *ngFor="let subject of subjects">
+      <a routerLink="/subjectdetail/{{subject.id}}">
+        <span class="badge">{{subject.id}}</span> {{subject.name}}
+      </a>
+      <button class="delete" title="delete student"
+              (click)="delete(subject)">x</button>
+    </li>
+  </ul>
+</div>

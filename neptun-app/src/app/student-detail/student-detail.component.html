@@ -1,0 +1,18 @@
+<div class="container" *ngIf="student">
+  <form #studentForm="ngForm" (ngSubmit)="save(student)">
+    <div class="form-group">
+      <label for="name">Név</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="student.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="birth">Születési dátum</label>
+      <input type="date" class="form-control" id="birth" required [(ngModel)]="student.birth" name="birth">
+    </div>
+
+    <app-subjects [student]="student"></app-subjects>
+
+    <button type="submit" [disabled]="!studentForm.form.valid" class="btn btn-success">Submit</button>
+
+  </form>
+</div>
